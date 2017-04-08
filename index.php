@@ -15,7 +15,7 @@
     <style type="text/css">
       #map-canvas {
         width:100%;
-        height: 600px;
+        height: 400px;
       }
     </style>
 
@@ -39,7 +39,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h2>Berita</h2>
+          <h2>News</h2>
           <ul class="list-group">
             <li class="list-group-item"><a href="http://www.beritasatu.com/megapolitan/347294-gagal-menyalip-bus-pengendara-motor-tewas-terlindas-truk.html">Gagal menyalip bus, pengendara motor tewas terlindas  </a></li>
             <li class="list-group-item"><a href="http://news.okezone.com/read/2017/04/08/338/1662135/gubrak-avanza-terbalik-di-gandaria-jaksel">Gubrak...Avanza Terbalik di Gandaria Jaksel </a></li>
@@ -94,7 +94,8 @@
         var myLatlng = {lat: myLat, lng: myLng };
         var marker = new google.maps.Marker({
             position: myLatlng,
-            title:titleMarker
+            title:titleMarker,
+            icon: (thId%2==0 ? 'http://accidents.independen.id/marker/marker-yellow.png' : 'http://accidents.independen.id/marker/marker-red.png')
         });
         marker.setMap(map);
 

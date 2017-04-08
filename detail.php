@@ -26,7 +26,7 @@ if (! empty($_GET['id'])) {
     <style type="text/css">
       #map-canvas {
         width:100%;
-        height: 500px;
+        height: 400px;
       }
     </style>
 
@@ -40,7 +40,7 @@ if (! empty($_GET['id'])) {
 
     <div class="container">
       <div class="page-header">
-        <h2>Traffic Accidents Area</h2>
+        <h2><a href="/">&lArr; </a> Traffic Accidents Area</h2>
       </div>
     </div>
 
@@ -52,6 +52,20 @@ if (! empty($_GET['id'])) {
         <h2><?=$data_row['nama_jalan']?></h2>
         <p><?=$data_row['kecamatan']?>, <?=$data_row['kota']?></p>
       </div>
+
+      <div class="row">
+        <div class="col-md-12" style="font-size:1.6em">
+          <span class="label label-default">Jalan rusak</span>
+          <span class="label label-default">Jalan bergelombang</span>
+          <span class="label label-default">Tikungan</span>
+          <span class="label label-default">Perlintasan kereta</span>
+          <span class="label label-default">Rambu</span>
+          <span class="label label-default">Penerangan jalan</span>
+          <span class="label label-default">Petugas</span>
+        </div>
+      </div>
+      <hr>
+
       <div class="row">
         <div class="col-md-12">
           <ul class="list-group">
@@ -63,9 +77,6 @@ if (! empty($_GET['id'])) {
         </div>
       </div>
     </div>
-
-
-
 
 
     <hr>
@@ -96,7 +107,7 @@ if (! empty($_GET['id'])) {
       function sun_is_rises() {
         directionsDisplay = new google.maps.DirectionsRenderer({
           map: map,
-          polylineOptions: { strokeColor: "#ff0000" }
+          polylineOptions: { strokeColor: "<?=((($data_row['id']*1)%2) == 0) ? '#ff0000' : '#FFBF00'?>" }
         });
         directionsDisplay.setOptions({ suppressMarkers: true });
       }
