@@ -1,5 +1,7 @@
 Some introduction text here.
 
+http://bootsnipp.com/snippets/featured/zigzag-timeline-layout
+
 
 License
 -------
