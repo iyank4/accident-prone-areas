@@ -1,6 +1,6 @@
 <?php
 
-$DB_CONN = mysqli_connect('localhost', 'root', 'mysql', 'gen2017');
+$DB_CONN = mysqli_connect('localhost', 'root', '', 'gen2017');
 
 
 function open_sesame($query) {

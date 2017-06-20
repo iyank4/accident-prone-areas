@@ -12,6 +12,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
     <link href="css/timeline.css" rel="stylesheet">
+	<link href="http://independen.id/frontend/iid/assets/css/independen.min.css?v=1487731926" rel="stylesheet">
     <style type="text/css">
       #map-canvas {
         width:100%;
@@ -27,11 +28,67 @@
   </head>
 
   <body>
+  <?php /*
     <div class="container">
         <div class="page-header">
           <h1>Traffic Accidents Area</h1>
         </div>
-    </div>
+    </div>*/ ?>
+	
+<header>
+<nav class="navbar navbar-iid navbar-fixed-top" role="navigation" style="background:#fff;">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle collapsed" data-toggle="offcanvas" data-target="#iid-pushmenu">
+<span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="http://independen.id/">
+<img class="" src="http://independen.id/frontend/iid/assets/img/independen.png?v=1472044809" alt="independne.id" height="50" data-rjs="2">
+</a>
+<a href="#" data-toggle="offcanvas" data-target="#iid-pushmenu" class="iid-search-xs pull-right visible-xs"><span class="glyphicon glyphicon-search"></span></a>
+</div>
+<div id="navbar-iid" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li>
+<a href="http://independen.id/channel/berita" class="menu-iid" data-target="sub1">Berita</a>
+</li>
+<li>
+<a href="http://independen.id/channel/sastra" class="menu-iid" data-target="sub5">Sastra</a>
+</li>
+<li>
+<a href="http://independen.id/channel/khusus" class="menu-iid" data-target="sub6">Khusus</a>
+</li>
+<li>
+<a href="http://independen.id/channel/info" class="menu-iid" data-target="sub40">Info</a>
+</li>
+<li>
+<a href="http://independen.id/channel/data" class="menu-iid" data-target="sub46">Data</a>
+</li>
+<li>
+<a href="" class="menu-iid" data-target="">ACCIDENT</a>
+</li>
+</ul>
+<form class="navbar-form navbar-right hidden-xs" role="search">
+<a href="https://www.facebook.com/independenid/" target="_blank"><img src="http://independen.id/frontend/iid/assets/img/facebook.png?v=1471926608" alt="" data-rjs="2"></a> <a href="https://twitter.com/independenid" target="_blank"><img src="http://independen.id/frontend/iid/assets/img/twitter.png?v=1471926608" alt="" data-rjs="2"></a> &nbsp;&nbsp;
+<input id="srctxtd" type="text" name="s" placeholder="search" style="display:none">
+<a href="#" id="srcbtnd"><img src="http://independen.id/frontend/iid/assets/img/search.png?v=1471926608" alt="" data-rjs="2"></a>
+<div class="form-group" style="display:none">
+<input type="text" class="form-control" placeholder="Search">
+</div>
+</form>
+</div>
+</div>
+</nav>
+</header>
+
+<div class="row">
+	<div class="container-full" style="text-align:center; background: url(accident.png) repeat-x center center;">
+		<img src="accident.jpg" />
+	</div>
+</div>
 
     <div id="map-canvas"></div>
     <hr>
